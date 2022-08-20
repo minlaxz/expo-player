@@ -45,14 +45,39 @@ export default function App() {
           }}
         >
           <Stack.Screen
-            name="Home"
+            name="home"
             component={Screens.HomeScreen}
-            options={{ title: '日本語の問題 N5~N1' }}
+            options={{ title: '日本語 N5~N1' }}
           />
           <Stack.Screen
-            name="N5Screen"
+            name="mondai"
+            component={Screens.MondaiScreen}
+            options={{ title: '問題' }}
+          />
+          <Stack.Screen
+            name="n5mondai"
             component={Screens.N5Screen}
-            options={{ title: '日本語の問題 N5' }}
+            options={{ title: '問題 N5' }}
+          />
+          <Stack.Screen
+            name="n4mondai"
+            component={Screens.N4Screen}
+            options={{ title: '問題 N4' }}
+          />
+          <Stack.Screen
+            name="n3mondai"
+            component={Screens.N3Screen}
+            options={{ title: '問題 N3' }}
+          />
+          <Stack.Screen
+            name="n2mondai"
+            component={Screens.N2Screen}
+            options={{ title: '問題 N2' }}
+          />
+          <Stack.Screen
+            name="n1mondai"
+            component={Screens.N1Screen}
+            options={{ title: '問題 N1' }}
           />
         </Stack.Navigator>
       </ReduxProvider>
